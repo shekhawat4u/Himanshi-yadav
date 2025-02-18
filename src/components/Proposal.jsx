@@ -4,7 +4,7 @@ import Confetti from 'react-confetti';
 const Proposal = () => {
   const [response, setResponse] = useState('');
   const handleCoffeeDate = () => setResponse('Coffee Date');
-  const handleShopping = () => setResponse('Shopping');
+  const handleShopping = () => setResponse('Coffee Date');
 
   return (
     <section className="bg-gradient-to-r from-blue-500 to-purple-600 py-20 text-center text-white">
