@@ -4,7 +4,7 @@ import Confetti from 'react-confetti';
 const Proposal = () => {
   const [response, setResponse] = useState('');
   const handleCoffeeDate = () => setResponse('Coffee Date');
-  const handleShopping = () => setResponse('Coffee Date');
+  const handleShopping = () => setResponse('Shopping');
 
   return (
     <section className="bg-gradient-to-r from-blue-500 to-purple-600 py-20 text-center text-white">
@@ -25,7 +25,7 @@ const Proposal = () => {
       </div>
       {response && (
         <>
-          {response === 'Coffee Date' && <Confetti />}
+          {response === 'Coffee Date' && 'Shopping' && <Confetti />}
           <p className="mt-8 text-xl sm:text-3xl">
             {response === 'Coffee Date' 
               ? "A cozy coffee date sounds perfect! Let's make it happen. ☕❤️" 
